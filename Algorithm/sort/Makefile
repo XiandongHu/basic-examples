@@ -1,7 +1,8 @@
 SOURCES = util.cpp \
 		  test.cpp \
 		  bubble.cpp \
-		  insert.cpp
+		  insert.cpp \
+		  select.cpp
 
 test: $(SOURCES)
 	g++ -o $@ $(SOURCES)

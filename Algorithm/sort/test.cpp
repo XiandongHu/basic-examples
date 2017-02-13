@@ -3,6 +3,7 @@
 
 extern void bubbleTest(int a[], int n);
 extern void insertTest(int a[], int n);
+extern void selectTest(int a[], int n);
 
 int main(int argc, char** argv)
 {
@@ -13,4 +14,5 @@ int main(int argc, char** argv)
 
 	bubbleTest(a, NUM);
 	insertTest(a, NUM);
+	selectTest(a, NUM);
 }
