@@ -2,6 +2,7 @@
 #include "util.h"
 
 extern void bubbleTest(int a[], int n);
+extern void insertTest(int a[], int n);
 
 int main(int argc, char** argv)
 {
@@ -11,4 +12,5 @@ int main(int argc, char** argv)
 	printArray(a, NUM);
 
 	bubbleTest(a, NUM);
+	insertTest(a, NUM);
 }
