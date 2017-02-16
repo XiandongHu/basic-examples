@@ -7,6 +7,7 @@ extern void selectTest(int a[], int n);
 extern void shellTest(int a[], int n);
 extern void mergeTest(int a[], int n);
 extern void quickTest(int a[], int n);
+extern void heapTest(int a[], int n);
 
 int main(int argc, char** argv)
 {
@@ -21,4 +22,5 @@ int main(int argc, char** argv)
 	shellTest(a, NUM);
 	mergeTest(a, NUM);
 	quickTest(a, NUM);
+	heapTest(a, NUM);
 }
