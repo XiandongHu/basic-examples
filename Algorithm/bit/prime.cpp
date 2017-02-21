@@ -48,12 +48,10 @@ static void printResult()
 	printf("\n");
 }
 
-int main(int argc, char** argv)
+void primeTest()
 {
 	printf("100以内的素数：	");
 	//findPrime();
 	findPrime2();
 	printResult();
-
-	return 0;
 }
