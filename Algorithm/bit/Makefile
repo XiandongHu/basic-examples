@@ -1,5 +1,6 @@
 SOURCES = test.cpp \
-		  prime.cpp
+		  prime.cpp \
+		  exchange.cpp
 
 test: $(SOURCES)
 	g++ -o $@ $(SOURCES)
