@@ -1,0 +1,5 @@
+#!/bin/sh
+
+keytool -genkey -keyalg RSA -dname "CN=localhost, OU=localhost, O=localhost, L=HD, ST=BJ, C=CN" -keystore server.keystore -storepass 123456 -alias server -keypass 123456 -validity 3650
+keytool -certreq -keystore server.keystore -alias server -file ca.csr
+keytool -export -keystore server.keystore -alias server -file ca.cer

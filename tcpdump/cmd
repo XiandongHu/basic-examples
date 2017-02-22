@@ -1,0 +1,14 @@
+nslookup  42.62.48.37 10.237.8.8
+nslookup PTR 42.62.48.37 10.237.8.8
+dig PTR 42.62.48.37 @10.237.8.8
+
+tcpdump -s 65535 -i any host 10.237.101.118 -w /tmp/br6.cap
+tcpdump -s 65535 -i br-lan host 192.168.31.1 -w /tmp/br6.cap
+
+tcpdump -s 65535 -i wl1 -n 'dst 42.62.48.37 or src 42.62.48.37' -w /tmp/br3.cap
+
+tcpdump -i any -p -s 0 -w /sdcard/capture.cap
+
+adb root
+adb remount
+adb shell
