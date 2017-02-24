@@ -6,7 +6,8 @@ SOURCES = util.cpp \
 		  shell.cpp \
 		  merge.cpp \
 		  quick.cpp \
-		  heap.cpp
+		  heap.cpp \
+		  radix.cpp
 
 test: $(SOURCES)
 	g++ -o $@ $(SOURCES)

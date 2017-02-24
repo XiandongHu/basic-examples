@@ -9,6 +9,8 @@ extern void mergeTest(int a[], int n);
 extern void quickTest(int a[], int n);
 extern void heapTest(int a[], int n);
 
+extern void radixTest();
+
 int main(int argc, char** argv)
 {
 	const int NUM = 10;
@@ -23,4 +25,7 @@ int main(int argc, char** argv)
 	mergeTest(a, NUM);
 	quickTest(a, NUM);
 	heapTest(a, NUM);
+
+	printf("\n");
+	radixTest();
 }
