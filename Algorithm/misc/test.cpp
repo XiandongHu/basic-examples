@@ -1,10 +1,12 @@
 #include <stdio.h>
 
-extern void findTest();
+extern void findIndexTest();
+extern void findRepeatTest();
 
 int main(int argc, char** argv)
 {
-	findTest();
+	findIndexTest();
+	findRepeatTest();
 
 	return 0;
 }

@@ -8,7 +8,7 @@
  * 除了依次遍历，还有更好的方法么？
  */
 
-static int findNumber(int a[], int n, int number)
+static int findNumberIndex(int a[], int n, int number)
 {
 	int nextIndex = abs(number - a[0]);
 	while (nextIndex < n) {
@@ -21,7 +21,7 @@ static int findNumber(int a[], int n, int number)
 	return -1;
 }
 
-void findTest()
+void findIndexTest()
 {
 	const int MAX = 10;
 	int a[MAX] = {4, 5, 6, 5, 6, 7, 8, 9, 10, 9};
@@ -29,7 +29,7 @@ void findTest()
 	printArray(a, MAX);
 	
 	for (int i = 0; i < MAX; i++) {
-		printf("查找%d	下标为%d\n", a[i], findNumber(a, MAX, a[i]));
+		printf("查找%d	下标为%d\n", a[i], findNumberIndex(a, MAX, a[i]));
 	}
-	printf("查找%d	下标为%d\n", 100, findNumber(a, MAX, 100));
+	printf("查找%d	下标为%d\n", 100, findNumberIndex(a, MAX, 100));
 }
