@@ -1,5 +1,4 @@
-SOURCES = util.cpp \
-		  test.cpp \
+SOURCES = test.cpp \
 		  bubble.cpp \
 		  insert.cpp \
 		  select.cpp \
@@ -9,10 +8,13 @@ SOURCES = util.cpp \
 		  heap.cpp \
 		  radix.cpp
 
-test: $(SOURCES)
-	g++ -o $@ $(SOURCES)
+test: $(SOURCES) dep
+	g++ -I../util -L../util -o $@ $(SOURCES) -lutil
+
+dep:
+	make -C ../util
 
 clean:
 	rm -f test
 
-.PHONY: clean
+.PHONY: dep clean

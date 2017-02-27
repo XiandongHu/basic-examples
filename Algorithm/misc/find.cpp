@@ -1,23 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include "util.h"
 
 /*
  * 有这样一个数组A，大小为n，相邻元素差的绝对值都是1。
  * 如：A={4,5,6,5,6,7,8,9,10,9}。现在，给定A和目标整数t，请找到t在A中的位置。
  * 除了依次遍历，还有更好的方法么？
  */
-
-static void printArray(int a[], int n)
-{
-	for (int i = 0; i < n; i++) {
-		printf("%d", a[i]);
-		if (i != n - 1) {
-			putchar(' ');
-		} else {
-			putchar('\n');
-		}
-	}
-}
 
 static int findNumber(int a[], int n, int number)
 {
