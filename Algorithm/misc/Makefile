@@ -1,6 +1,7 @@
 SOURCES = test.cpp \
 		  findIndex.cpp \
-		  findRepeat.cpp
+		  findRepeat.cpp \
+		  findLost.cpp
 
 test: $(SOURCES) dep
 	g++ -I../util -L../util -o $@ $(SOURCES) -lutil
