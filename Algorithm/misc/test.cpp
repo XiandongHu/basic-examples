@@ -4,6 +4,7 @@ extern void findIndexTest();
 extern void findRepeatTest();
 extern void findLostTest();
 extern void reverseSequenceTest();
+extern void buildArrayTest();
 
 int main(int argc, char** argv)
 {
@@ -17,6 +18,9 @@ int main(int argc, char** argv)
 	printf("\n");
 
 	reverseSequenceTest();
+	printf("\n");
+
+	buildArrayTest();
 
 	return 0;
 }
